@@ -267,6 +267,7 @@ TARGET_HAS_HDR_DISPLAY := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DRM_PP := true
+TARGET_USES_VULKAN := true
 
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE := device/google/crosshatch/manifest.xml
