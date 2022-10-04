@@ -870,6 +870,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.vsync_sf_event_phase_of
 # The data space of wide color gamut composition preference is Dataspace::DISPLAY_P3
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.wcg_composition_dataspace=143261696
 
+PRODUCT_ODM_PROPERTIES += \
+    debug.sf.disable_client_composition_cache=0
+    
 # Display
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_wide_color_display=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_HDR_display=true
