@@ -17,6 +17,9 @@ TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_
 TARGET_KERNEL_SOURCE := kernel/google/bluecross
 TARGET_NEEDS_DTBOIMAGE := true
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor
