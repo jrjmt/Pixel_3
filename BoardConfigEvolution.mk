@@ -14,6 +14,9 @@ TARGET_KERNEL_CONFIG := b1c1_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/bluecross
 TARGET_NEEDS_DTBOIMAGE := true
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor
