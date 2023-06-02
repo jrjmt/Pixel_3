@@ -13,7 +13,6 @@ rm -rf hardware/qcom/sdm845/media
 rm -rf hardware/qcom/wlan
 rm -rf hardware/lineage/compat
 rm -rf prebuilts/clang/kernel/linux-x86/clang-r416183b
-rm -rf packages/apps/GoogleCamera
 
 # Tree Dependencies
 git clone --depth=1 https://github.com/Google-Pixel-3-XL/device_google_crosshatch.git -b evo device/google/crosshatch
@@ -27,9 +26,6 @@ git clone --depth=1 https://github.com/Google-Pixel-3-XL/hardware_qcom_sdm845_di
 git clone --depth=1 https://github.com/Google-Pixel-3-XL/hardware_qcom_wlan.git -b thirteen hardware/qcom/wlan
 git clone --depth=1 https://github.com/LineageOS/android_hardware_lineage_compat.git -b lineage-20.0 hardware/lineage/compat
 git clone --depth=1 https://github.com/Google-Pixel-3-XL/clang-r416183b.git -b thirteen prebuilts/clang/kernel/linux-x86/clang-r416183b
-
-# Google Camera
-git clone --depth=1 https://gitlab.com/asriadirahim/packages_apps_googlecamera.git -b thirteen packages/apps/GoogleCamera
 
 echo 'Verification...'
 echo 'OK'
