@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-evolution
 
 # AiAi Config
 PRODUCT_COPY_FILES += \
@@ -26,10 +26,6 @@ PRODUCT_COPY_FILES += \
 
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Parts
 PRODUCT_PACKAGES += \
@@ -93,6 +89,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# NowPlayingOverlay
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
+    
 # Nos
 PRODUCT_PACKAGES += \
     libnos:64 \
