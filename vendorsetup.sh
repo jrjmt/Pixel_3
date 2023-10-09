@@ -16,7 +16,7 @@ git clone --depth=1 https://github.com/Google-Pixel-3-XL/vendor_google_crosshatc
 git clone --depth=1 https://github.com/Google-Pixel-3-XL/vendor_google_blueline.git -b thirteen vendor/google/blueline
 
 #Packages
-git clone --depth=1 https://gitlab.com/juliusronald/google_camera.git -b thirteen packages/apps/GcamMod
+#git clone --depth=1 https://gitlab.com/juliusronald/google_camera.git -b thirteen packages/apps/GcamMod
 
 echo '....'
 echo 'Verification...'
