@@ -3,6 +3,7 @@ drm.service.enabled=true
 media.mediadrmservice.enable=true
 
 # Graphics
+debug.renderengine.backend=gles
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
