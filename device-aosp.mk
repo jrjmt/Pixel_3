@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aosp
 
 # AiAi Config
 PRODUCT_COPY_FILES += \
@@ -16,20 +16,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
     ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
 
-# Elmyra
-PRODUCT_PACKAGES += \
-    ElmyraService
-
 # EUICC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Parts
 PRODUCT_PACKAGES += \
@@ -92,6 +84,10 @@ PRODUCT_PACKAGES += \
 # Json
 PRODUCT_PACKAGES += \
     libjson
+
+# NowPlayingOverlay
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
 
 # Nos
 PRODUCT_PACKAGES += \

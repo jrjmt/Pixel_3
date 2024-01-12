@@ -61,8 +61,35 @@ ifneq (REL,$(PLATFORM_VERSION_CODENAME))
   PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 endif
 
+# Inherit some common Elixir stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Elixir Flags
+IS_PHONE := true
+ELIXIR_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_DISABLE_EPPE := true
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+## Device identifier. This must come after all inclusions
 PRODUCT_MANUFACTURER := Google
 PRODUCT_NAME := aosp_crosshatch
 PRODUCT_DEVICE := crosshatch
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on crosshatch
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Pixel 3 XL
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=crosshatch \
+    PRIVATE_BUILD_DESC="crosshatch-user 12 SP1A.210812.016.C2 8618562 release-keys"
+
+BUILD_FINGERPRINT := google/crosshatch/crosshatch:12/SP1A.210812.016.C2/8618562:user/release-keys
+
+$(call inherit-product, vendor/google/crosshatch/crosshatch-vendor.mk)
+
+-include device/google/crosshatch/device-aosp.mk
