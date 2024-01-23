@@ -3,3 +3,4 @@ kernel/google/bluecross
 vendor/google/blueline
 vendor/google/crosshatch
 hardware/qcom/wlan
+packages/apps/ElmyraService

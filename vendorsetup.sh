@@ -9,6 +9,8 @@ rm -rf kernel/google/bluecross
 rm -rf vendor/google/blueline
 rm -rf vendor/google/crosshatch
 rm -rf hardware/qcom/wlan
+rm -rf packages/apps/ElmyraService
+rm -rf packages/apps/Updates
 
 # Tree Dependencies
 git clone --depth=1 https://github.com/Google-Pixel-3-XL/device_google_crosshatch.git -b evo_14 device/google/crosshatch
@@ -18,6 +20,9 @@ git clone --depth=1 https://github.com/Google-Pixel-3-XL/vendor_google_blueline.
 
 #Hals
 git clone --depth=1 https://github.com/LineageOS/android_hardware_qcom_wlan.git -b lineage-21.0 hardware/qcom/wlan
+
+# Etc
+git clone --depth=1 https://github.com/LineageOS/android_packages_apps_ElmyraService.git -b lineage-21.0 packages/apps/ElmyraService
 
 echo 'Verification...'
 echo 'OK'
