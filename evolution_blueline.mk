@@ -15,6 +15,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_MINI_GAPPS := true
+TARGET_BUILD_VIMUSIC := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit device configuration
